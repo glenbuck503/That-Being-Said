@@ -2,7 +2,7 @@ import * as c from './../actions/ActionTypes';
 
 let initialState = {
   isLoading: false,
-  headlines: [],
+  words: [],
   error: null
 }
 
@@ -15,7 +15,7 @@ export default (state = initialState, action) => {
     case c.GET_HEADLINES_SUCCESS:
       return Object.assign({}, state, {
         isLoading: false,
-        headlines: action.headlines
+        words: action.text
       });
     case c.GET_HEADLINES_FAILURE:
       return Object.assign({}, state, {
