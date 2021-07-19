@@ -8,16 +8,16 @@ let initialState = {
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case c.REQUEST_HEADLINES:
+    case c.REQUEST_WORDS:
       return Object.assign({}, state, {
         isLoading: true
       });
-    case c.GET_HEADLINES_SUCCESS:
+    case c.GET_WORDS_SUCCESS:
       return Object.assign({}, state, {
         isLoading: false,
         words: action.text
       });
-    case c.GET_HEADLINES_FAILURE:
+    case c.GET_WORDS_FAILURE:
       return Object.assign({}, state, {
         isLoading: false,
         error: action.error

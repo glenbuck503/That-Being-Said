@@ -1,19 +1,19 @@
 import * as c from './ActionTypes';
 
-export const requestHeadlines = () => ({
-  type: c.REQUEST_HEADLINES,
+export const requestWords = () => ({
+  type: c.REQUEST_WORDS,
   
   
 
 });
 
-export const getHeadlinesSuccess = (text) => ({
-  type: c.GET_HEADLINES_SUCCESS,
+export const getWordsSuccess = (text) => ({
+  type: c.GET_WORDS_SUCCESS,
 text
 });
 
-export const getHeadlinesFailure = (error) => ({
-  type: c.GET_HEADLINES_FAILURE,
+export const getWordsFailure = (error) => ({
+  type: c.GET_WORDS_FAILURE,
   error
 });
 
@@ -21,7 +21,7 @@ export let makeApiCall = () => {
  
   return dispatch => {
 
-    dispatch(requestHeadlines);
+    dispatch(requestWords);
 
     let result = "hello";
     let result2 = "bye"
@@ -32,10 +32,10 @@ export let makeApiCall = () => {
       .then(response => response.json())
       .then(
         (jsonifiedResponse) => {
-          dispatch(getHeadlinesSuccess(jsonifiedResponse.text));
+          dispatch(getWordsSuccess(jsonifiedResponse.text));
         })
       .catch((error) => {
-        dispatch(getHeadlinesFailure(error));
+        dispatch(getWordsFailure(error));
       });
       
     
