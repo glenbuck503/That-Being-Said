@@ -27,4 +27,3 @@ export default (state = initialState, action) => {
     }
 };
 
-work in progress
