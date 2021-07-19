@@ -1,0 +1,33 @@
+Name of Student: Glen Buck
+
+Name of Project: "That Being Said"
+
+Project's Goal: To take a user's input and translate the imputed string into various languages.
+
+
+Minimum Requirements to Meet This Goal: 
+
+* Able to translate a single word to one different language other than English
+
+* Able to successfully make an API call to Yandex Translate API
+
+* Return translated input to user's browser
+
+
+Tools/Frameworks/APIs That Will be Used:
+
+* JavaScript
+* HTML
+* Bootstrap
+* CSS
+* React
+* Node
+* Yandex API
+* Webpack
+
+If finishing the MVP with time left, these are the things to do next:
+
+* Take in multiple words in a string and translate
+* Be able to translate to more than one language
+* Have links related to where this language is mostly used in the world
+* See what words the user's input can make out of characters inputted 
