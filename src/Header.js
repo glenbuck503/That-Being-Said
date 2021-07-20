@@ -1,5 +1,5 @@
 import React from "react";
-import wordsImage from "./img/languages.jpeg";
+import wordsImage from "./img/languages2.png";
 import ReusableForm from "./ReusableForm";
 
 function Header() {
