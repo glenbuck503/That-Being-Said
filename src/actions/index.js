@@ -23,8 +23,8 @@ export let makeApiCall = () => {
 
     dispatch(requestWords);
 
-    let result = "hello";
-    let result2 = "bye"
+    let result = "hello old friend";
+    
   
     return fetch(`https://translate.yandex.net/api/v1.5/tr.json/translate?key=${process.env.REACT_APP_API_KEY}&text=${result}&lang=en-es`)
     

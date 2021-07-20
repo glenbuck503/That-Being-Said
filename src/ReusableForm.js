@@ -11,12 +11,8 @@ function ReusableForm(props) {
           type='text'
           name='words'
           placeholder='Translate' />
-        <button type='submit'>{props.buttonText}</button>
-        
-
-        
-
-        
+        <button type='submit'>TRANSLATE{props.buttonText}</button>
+          
       </form>
       
     </React.Fragment>
