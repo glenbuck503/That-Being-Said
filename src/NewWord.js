@@ -20,10 +20,12 @@ return (
       <ReusableForm 
         formSubmissionHandler={handleNewWordSubmission}
         buttonText="Translate Words!" />
+
+ 
     </React.Fragment>
   );
   }
-  
+
   NewWord.propTypes = {
     onNewWordCreation: PropTypes.func,
     formSubmissionHandler: PropTypes.func

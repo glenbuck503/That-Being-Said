@@ -12,7 +12,7 @@ function ReusableForm(props) {
           name='words'
           placeholder='Translate' />
         <button type='submit'>TRANSLATE{props.buttonText}</button>
-          
+    
       </form>
      
       

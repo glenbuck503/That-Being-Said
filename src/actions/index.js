@@ -16,6 +16,16 @@ export const getWordsFailure = (error) => ({
   error
 });
 
+
+// export const addWords = (word) => {
+//   const { words, id } = word;
+//   return {
+//     type: c.GET_WORDS_SUCCESS,
+//     words: words,
+ 
+//     id: id
+//   }
+// }
 export let makeApiCall = () => {
  
   return dispatch => {
