@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.css';
-import Words from './Words';
+// import Words from './Words';
 import ReusableForm from './ReusableForm';
+import Header from './Header'
 
 function App() {
   return (
     <React.Fragment>
-      < Words />
+      < Header />
       < ReusableForm/>
     </React.Fragment>
   );
