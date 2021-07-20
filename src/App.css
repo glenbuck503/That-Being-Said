@@ -40,3 +40,10 @@
 body {
   background-color:rgb(112, 238, 137);
 }
+
+img {
+  width: 1270px;
+  height: 300px;
+  /* position:fixed; */
+
+}
