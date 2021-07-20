@@ -3,7 +3,6 @@ import * as c from './ActionTypes';
 export const requestWords = () => ({
   type: c.REQUEST_WORDS,
   
-  
 
 });
 
