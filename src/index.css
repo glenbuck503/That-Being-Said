@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(43, 255, 0);
+  /* background-color: rgb(43, 255, 0); */
 }
 
 code {
@@ -14,8 +14,10 @@ code {
 }
 
 
-img {
+/* img {
   width: 1390px;
   position:fixed;
 
-}
+} */
+
+
