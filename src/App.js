@@ -8,11 +8,14 @@ import WordControl from './WordControl';
 function App() {
   return (
     <React.Fragment>
-      {/* < Header /> */}
-      <Words />
+      < Header />
+     
       <div className="inputForm">
       < ReusableForm/>
+      <Words />
       </div>
+
+    
     </React.Fragment>
   );
 }
