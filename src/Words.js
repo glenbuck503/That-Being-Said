@@ -29,15 +29,16 @@ class Words extends React.Component {
       return (
         <React.Fragment>
       
-          {/* <ul>
-            {words.map((word, index) =>
+      <ul>
+            {words.map((words, index) =>
               <li key={index}>
-          
-          
+                <h3>{words.text}</h3>
+              
               </li>
             )}
-          </ul> */}
+          </ul>
           <h3>{words}</h3>
+          {/* <p>Powered By <a href="http://translate.yandex.com">Yandex.Translate</a></p> this line is still unclear to me. the documentation for this api says it requires you to have the powered by line but unsure*/} 
         </React.Fragment>
       );
     }

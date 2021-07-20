@@ -14,6 +14,7 @@ function ReusableForm(props) {
         <button type='submit'>TRANSLATE{props.buttonText}</button>
           
       </form>
+     
       
     </React.Fragment>
   );
