@@ -12,11 +12,11 @@ class Words extends React.Component {
 
   }
 
-  componentDidMount() {
+  // componentDidMount() {
 
-    const { dispatch } = this.props;
-    dispatch(makeApiCall());
-  }
+  //   const { dispatch } = this.props;
+  //   dispatch(makeApiCall());
+  // }
 
   render() {
     const { error, isLoading, words } = this.props;
@@ -28,12 +28,7 @@ class Words extends React.Component {
       return (
         <React.Fragment>
        <ul>
-            {/* {words.map((text, index) =>
-              
-             
-                <p>{text.text}</p>
-            
-            )} */}
+
           </ul>
           <h3>{words}</h3>
          

@@ -7,18 +7,18 @@ function NewWord(props){
 const words = {};
 words.id = v4();
 
-function handleNewWordSubmission(event) {
-  event.preventDefault();
-  props.onNewWordCreation({
-    words: event.target.words.value, 
-    id: v4()
-  });
-}
+// function handleNewWordSubmission(event) {
+//   event.preventDefault();
+//   props.onNewWordCreation({
+//     words: event.target.words.value, 
+//     id: v4()
+//   });
+// }
 return (
 
     <React.Fragment>
       <ReusableForm 
-        formSubmissionHandler={handleNewWordSubmission}
+        formSubmissionHandler={props.onNewWordCreation()}
         // buttonText="Translate Words!" />
           />
 
@@ -27,9 +27,9 @@ return (
   );
   }
 
-  NewWord.propTypes = {
-    onNewWordCreation: PropTypes.func,
-    formSubmissionHandler: PropTypes.func
-  };
+  // NewWord.propTypes = {
+  //   onNewWordCreation: PropTypes.func,
+  //   // formSubmissionHandler: PropTypes.func
+  // };
   
   export default NewWord;

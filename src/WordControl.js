@@ -14,7 +14,8 @@ class WordControl extends React.Component {
     this.state = {
 
       selectedWord: null,
-      editing: false
+      editing: false,
+      words: ""
 
     };
 
@@ -37,11 +38,17 @@ class WordControl extends React.Component {
   }
 
 
-   handleAddingNewWordToList = (newWord) => {
+    handleAddingNewWordToList = (newWord) => {
+    this.setState({
 
-    const { dispatch } = this.props;
-    const action = a.getWordsSuccess(newWord);
-    dispatch(action);
+      selectedWord: null,
+      editing: false,
+      word: newWord
+
+    })
+    // const { dispatch } = this.props;
+    // const action = a.getWordsSuccess(newWord);
+    // dispatch(action);
     // const action2 = a.toggleForm();
     // dispatch(action2);
   }
@@ -50,7 +57,7 @@ class WordControl extends React.Component {
   render(){
     let currentlyVisibleState = null;
     let buttonText = null; 
-
+    let words = ""
 
 if (this.state.selectedWord != null) {
       currentlyVisibleState = <WordDetail
@@ -62,7 +69,7 @@ if (this.state.selectedWord != null) {
  
       
     } else if (this.props.formVisibleOnPage) {
-      currentlyVisibleState = <NewWord onNewWordCreation={this.handleAddingNewWordToList} />
+      currentlyVisibleState = <NewWord onNewWordCreation={this.handleAddingNewWordToList()} />
       
       buttonText = "Return to word List";
     
@@ -79,9 +86,9 @@ if (this.state.selectedWord != null) {
     return (
 
       <React.Fragment>
-      
+        <h3>{this.props.word}</h3>
         {currentlyVisibleState}
-        <button onClick={this.handleClick}>sfdfdfsd{buttonText} </button>
+        
  
       </React.Fragment>
       
