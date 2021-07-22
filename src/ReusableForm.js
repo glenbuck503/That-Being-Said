@@ -26,7 +26,7 @@ function ReusableForm(props) {
   return (
     <React.Fragment>
 
-      {/* <form onSubmit={props.formSubmissionHandler}> */}
+   
         
         <input
           onChange={handleChange}
@@ -35,19 +35,14 @@ function ReusableForm(props) {
           placeholder='Translate' />
         <button onClick={onSubmit} >TRANSLATE{props.buttonText}</button>
         <p>{translatedWord}</p>
-      {/* </form> */}
-     
-      
+ 
     </React.Fragment>
-
   );
-  
+ 
 }
 
 ReusableForm.propTypes = {
   formSubmissionHandler: PropTypes.func,
   buttonText: PropTypes.string
-
 };
-
 export default ReusableForm;

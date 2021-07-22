@@ -29,25 +29,3 @@ export default (state = initialState, action) => {
 
 
 
-// export default (state = {}, action) => {
-//   const { words, id } = action;
-//   switch (action.type) {
-//   case c.GET_WORDS_SUCCESS:
-//     console.log(words)
-//     return Object.assign({}, state, {
-//       [id]: {
-//         words: words,
-  
-//         id: id
-//       }
-//     });
-//   case c.GET_WORDS_FAILURE:
-//     let newState = { ...state };
-//     delete newState[id];
-//     return newState;
-//   default:
-//     return state;
-//   }
-// };
-
-

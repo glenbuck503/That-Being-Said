@@ -1,35 +1,22 @@
-import React from "react";
-import { v4 } from "uuid";
-import PropTypes from "prop-types";
-import ReusableForm from "./ReusableForm";
+// import React from "react";
+// import { v4 } from "uuid";
+// import PropTypes from "prop-types";
+// import ReusableForm from "./ReusableForm";
 
-function NewWord(props){
-const words = {};
-words.id = v4();
+// function NewWord(props){
+// const words = {};
+// words.id = v4();
 
-// function handleNewWordSubmission(event) {
-//   event.preventDefault();
-//   props.onNewWordCreation({
-//     words: event.target.words.value, 
-//     id: v4()
-//   });
-// }
-return (
 
-    <React.Fragment>
-      <ReusableForm 
-        formSubmissionHandler={props.onNewWordCreation()}
-        // buttonText="Translate Words!" />
-          />
+// return (
 
+//     <React.Fragment>
+//       <ReusableForm 
+//         formSubmissionHandler={props.onNewWordCreation()}
+//           />
  
-    </React.Fragment>
-  );
-  }
-
-  // NewWord.propTypes = {
-  //   onNewWordCreation: PropTypes.func,
-  //   // formSubmissionHandler: PropTypes.func
-  // };
+//     </React.Fragment>
+//   );
+//   }
   
-  export default NewWord;
+//   export default NewWord;
