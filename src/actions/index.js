@@ -7,6 +7,7 @@ export const requestWords = () => ({
 });
 
 export const getWordsSuccess = (text) => ({
+  
   type: c.GET_WORDS_SUCCESS,
 text
 });
@@ -36,6 +37,7 @@ export let makeApiCall = () => {
     dispatch(requestWords);
 
     let result = "hello old friend";
+    // const result = event.target.words.value
 
   
     return fetch(`https://translate.yandex.net/api/v1.5/tr.json/translate?key=${process.env.REACT_APP_API_KEY}&text=${result}&lang=en-es`)

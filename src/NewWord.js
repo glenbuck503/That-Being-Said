@@ -19,7 +19,8 @@ return (
     <React.Fragment>
       <ReusableForm 
         formSubmissionHandler={handleNewWordSubmission}
-        buttonText="Translate Words!" />
+        // buttonText="Translate Words!" />
+          />
 
  
     </React.Fragment>

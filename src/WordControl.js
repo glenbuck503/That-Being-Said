@@ -40,7 +40,7 @@ class WordControl extends React.Component {
    handleAddingNewWordToList = (newWord) => {
 
     const { dispatch } = this.props;
-    const action = a.getWordsSuccess2(newWord);
+    const action = a.getWordsSuccess(newWord);
     dispatch(action);
     // const action2 = a.toggleForm();
     // dispatch(action2);
@@ -54,7 +54,7 @@ class WordControl extends React.Component {
 
 if (this.state.selectedWord != null) {
       currentlyVisibleState = <WordDetail
-        word = {this.state.selectedWord} 
+        words = {this.state.selectedWord} 
         onClickingDelete = {this.handleDeletingWord}
   
       />
@@ -64,27 +64,33 @@ if (this.state.selectedWord != null) {
     } else if (this.props.formVisibleOnPage) {
       currentlyVisibleState = <NewWord onNewWordCreation={this.handleAddingNewWordToList} />
       
-      buttonText = "Return to word List"
+      buttonText = "Return to word List";
+    
 
-    } else {
+    // } else {
       
-      currentlyVisibleState = <WordList wordList={this.props.masterWordList} onWordSelection={this.handleChangingSelectedWord}/>
+    //   currentlyVisibleState = <WordList wordList={this.props.masterWordList} onWordSelection={this.handleChangingSelectedWord}/>
 
-      buttonText = "Add Word";
+    //   buttonText = "Add Word";
  
       
+    // }
     }
     return (
 
       <React.Fragment>
       
         {currentlyVisibleState}
-        <button onClick={this.handleClick}>{buttonText} </button>
+        <button onClick={this.handleClick}>sfdfdfsd{buttonText} </button>
+ 
       </React.Fragment>
+      
     );
   }
-
+  
 }
+
+
 
 
 

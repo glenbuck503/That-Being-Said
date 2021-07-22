@@ -13,6 +13,7 @@ function App() {
       <div className="inputForm">
       < ReusableForm/>
       <Words />
+      <WordControl />
       </div>
 
     

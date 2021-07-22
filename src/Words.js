@@ -1,6 +1,6 @@
 import React from 'react';
 
-
+import PropTypes from "prop-types";
 import { connect } from 'react-redux';
 
 // import { makeApiCall } from './actions';
@@ -11,8 +11,6 @@ class Words extends React.Component {
     super(props);
 
   }
-
-
 
   componentDidMount() {
 
@@ -29,8 +27,14 @@ class Words extends React.Component {
     } else {
       return (
         <React.Fragment>
-      
-     
+       <ul>
+            {/* {words.map((text, index) =>
+              
+             
+                <p>{text.text}</p>
+            
+            )} */}
+          </ul>
           <h3>{words}</h3>
          
         </React.Fragment>
@@ -38,6 +42,11 @@ class Words extends React.Component {
     }
   }
 }
+
+Words.propTypes = {
+  masterWordList: PropTypes.object,
+  formVisibleOnPage: PropTypes.bool
+  };
 const mapStateToProps = state => {
   return {
     words: state.words,
