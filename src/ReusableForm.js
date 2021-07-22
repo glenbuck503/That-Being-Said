@@ -1,22 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 
 
 function ReusableForm(props) {
-  // const 
+  const [ word, setWord ] = useState("")
+
+  const onSubmit = () => {
+    console.log(word)
+  }
+  const handleChange = (event) => {
+    setWord(event.target.value)
+  }
   return (
     <React.Fragment>
 
-      <form onSubmit={props.formSubmissionHandler}>
+      {/* <form onSubmit={props.formSubmissionHandler}> */}
         
         <input
+          onChange={handleChange}
           type='text'
           name='words'
           placeholder='Translate' />
-        <button type='submit'>TRANSLATE{props.buttonText}</button>
+        <button onClick={onSubmit} >TRANSLATE{props.buttonText}</button>
   
     
-      </form>
+      {/* </form> */}
      
       
     </React.Fragment>
