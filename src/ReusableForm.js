@@ -47,6 +47,7 @@ function ReusableForm(props) {
           
         <button onClick={onSubmit} >TRANSLATE</button>
         <p>{translatedWord}</p>
+        <p>{translatedLang}</p>
 
         
  
