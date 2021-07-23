@@ -16,7 +16,7 @@ function ReusableForm(props) {
       .then(
         (jsonifiedResponse) => {
           setTranslatedWord(jsonifiedResponse.text[0]);
-          setTranslatedLang(jsonifiedResponse.text[0]);
+
 
         })
       .catch((error) => {
@@ -48,15 +48,15 @@ function ReusableForm(props) {
           
         <button onClick={onSubmit} >TRANSLATE</button>
         <p>{translatedWord}</p>
-        <p>{translatedLang}</p>
-
+        {/* <p>{translatedLang}</p> */}
+{/* 
         <select id = "dropdown">
     <option value="es">Russian</option>
     <option value="1dfsdf">1</option>
     <option value="2">2</option>
     <option value="3">3</option>
     <option value="4">4</option>
-</select>        
+</select>         */}
  
     </React.Fragment>
   );
