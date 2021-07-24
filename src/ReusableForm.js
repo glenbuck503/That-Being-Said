@@ -20,7 +20,7 @@ function ReusableForm(props) {
       .then(response => response.json())
       .then(
         (jsonifiedResponse) => {
-          setTranslatedWord(jsonifiedResponse.text[0]);
+          setTranslatedWord( word + " translated in " + lang + " is: " + jsonifiedResponse.text[0]);
           setTranslatedLang(jsonifiedResponse.text);
 
 
@@ -58,10 +58,10 @@ function ReusableForm(props) {
             placeholder='language code' />
         </div>
 
-          
+     
         <button onClick={onSubmit} >TRANSLATE</button>
         <p>{translatedWord}</p>
-        <p>{translatedLang}</p>
+   
 
 
    
