@@ -66,8 +66,19 @@ img {
    color: #F7882F;
  }
 
-  #first .placeholder {
-   font-family:monospace;
-   text-transform: red;
+  .first input {
+   font-family:cursive;
+   color:#F7882F;
+
  }
 
+ button {
+   font-family: monospace;
+   color: #F7882F;
+ }
+
+  ::placeholder {
+  font-family:cursive;
+  color:#F7882F;
+
+}
