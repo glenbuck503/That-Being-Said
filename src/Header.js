@@ -5,7 +5,7 @@ import ReusableForm from "./ReusableForm";
 function Header() {
   return (
     <React.Fragment>
-      <h2 className="said">That Being Said!</h2>
+      <h1 className="said">That Being Said!</h1>
       <div className="menu">
         <div className="Login">
           <p>Login</p>
