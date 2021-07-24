@@ -8,7 +8,7 @@ function ReusableForm(props) {
   const [ translatedWord, setTranslatedWord ] = useState("")
   const [ lang, setLang ] = useState("")
   const [ translatedLang, setTranslatedLang ] = useState("")
-  const [ dropdown1, setDropdown1 ] = useState("")
+
 
   const onSubmit = () => {
 
@@ -17,6 +17,7 @@ function ReusableForm(props) {
       .then(
         (jsonifiedResponse) => {
           setTranslatedWord(jsonifiedResponse.text[0]);
+
 
 
         })
@@ -32,9 +33,7 @@ function ReusableForm(props) {
     setLang(event.target.value)
   }
 
-  const handleDropDown = (event) => {
-    setLang(event.target.value)
-  }
+
   return (
     <React.Fragment>
         
@@ -50,17 +49,18 @@ function ReusableForm(props) {
           type='text'
           name='words'
           placeholder='lang' />
+{/*   
+        <select>
+          <option value="es" onChange={handleDropDown}>Russian</option>
 
-        <select id = "dropdown">
-          <option value={dropdown1} onChange={handleDropDown}>Russian</option>
-
-          {/* <option value="en">English</option>
-          <option value="es">Spanish</option> */}
-        </select>        
+         <option value="en">English</option>
+          <option value="es">Spanish</option> 
+        </select>         */}
           
         <button onClick={onSubmit} >TRANSLATE</button>
         <p>{translatedWord}</p>
-        {/* <p>{translatedLang}</p> */}
+        <p>{translatedLang}</p>
+        {/* <p>{translatedDrop}</p> */}
 
    
  
