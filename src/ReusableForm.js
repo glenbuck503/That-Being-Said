@@ -41,7 +41,13 @@ function ReusableForm(props) {
 
   return (
     <React.Fragment>
+      <div className="nav">
+      <button onClick={onSubmit} >Login</button>
+      <button onClick={onSubmit} >Contact</button>
+      <button onClick={onSubmit} >Links</button>
+      </div>
         <div className="first">
+        
           <input 
             onChange={handleChange}
             
@@ -60,6 +66,7 @@ function ReusableForm(props) {
 
      
         <button onClick={onSubmit} >TRANSLATE</button>
+      
         <p>{translatedWord}</p>
    
 
