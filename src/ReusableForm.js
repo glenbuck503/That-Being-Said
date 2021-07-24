@@ -30,6 +30,8 @@ function ReusableForm(props) {
       
       });
   }
+
+
   const handleChange = (event) => {
     setWord(event.target.value)
   }
@@ -45,6 +47,7 @@ function ReusableForm(props) {
       <button onClick={onSubmit} >Login</button>
       <button onClick={onSubmit} >Contact</button>
       <button onClick={onSubmit} >Links</button>
+      <button onClick={onSubmit} >Dictionary</button>
       </div>
         <div className="first">
         

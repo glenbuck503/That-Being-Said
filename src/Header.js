@@ -7,15 +7,15 @@ function Header() {
     <React.Fragment>
       <h1 className="said">That Being Said!</h1>
       <div className="menu">
-        <div className="Login">
+        {/* <div className="Login">
           <p>Login</p>
           <p>Contact</p>
           <p>Links</p>
            
-      {/* <img src={wordsImage} id="languagesPic" /> */}
+    
 
    
-      </div>
+      </div> */}
       </div>
       </React.Fragment>
   );
