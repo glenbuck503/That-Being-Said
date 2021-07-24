@@ -90,7 +90,18 @@ img {
 
 }
 
-/* .words {
-  margin: 30px;
-  color:#F7882F;
+.menu p {
+  display: inline-block;
+  color:white;
+ 
+  text-align:center;
+  padding-left:300px;
+
+ 
+}
+
+/* .Login {
+  display: inline-block;
 } */
+
+

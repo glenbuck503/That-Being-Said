@@ -20,7 +20,7 @@ function ReusableForm(props) {
       .then(response => response.json())
       .then(
         (jsonifiedResponse) => {
-          setTranslatedWord( word + " translated in " + lang + " is: " + jsonifiedResponse.text[0]);
+          setTranslatedWord( "Translation: " + jsonifiedResponse.text[0]);
           setTranslatedLang(jsonifiedResponse.text);
 
 
