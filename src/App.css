@@ -74,9 +74,10 @@ img {
  }
 
  button {
-   font-family: monospace;
-   color: #F7882F;
+   font-family: fantasy;
+   color:white;
    margin-left:140px;
+   background-color: #F7882F;
  }
 
   ::placeholder {
