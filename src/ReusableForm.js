@@ -41,21 +41,22 @@ function ReusableForm(props) {
 
   return (
     <React.Fragment>
-        {/* <div className="first"> */}
-        <input className="words"
-          onChange={handleChange}
-          
-          type='text'
-          name='words'
-          placeholder='Word(s) to translate' />
-          {/* </div> */}
-          
-          <input
-          onChange={handleChangeLang}
-          
-          type='text'
-          name='words'
-          placeholder='language code' />
+        <div className="first">
+          <input 
+            onChange={handleChange}
+            
+            type='text'
+            name='words'
+            placeholder='Word(s) to translate' />
+      
+            
+            <input
+            onChange={handleChangeLang}
+            
+            type='text'
+            name='words'
+            placeholder='language code' />
+        </div>
 
           
         <button onClick={onSubmit} >TRANSLATE</button>

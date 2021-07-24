@@ -69,16 +69,24 @@ img {
   .first input {
    font-family:cursive;
    color:#F7882F;
+   margin: 15px;
 
  }
 
  button {
    font-family: monospace;
    color: #F7882F;
+   margin-left:140px;
  }
 
   ::placeholder {
   font-family:cursive;
-  color:#F7882F;
+  color:#6B7A8F;
+  font-size: 17px;
 
 }
+
+/* .words {
+  margin: 30px;
+  color:#F7882F;
+} */
