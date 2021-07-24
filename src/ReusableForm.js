@@ -46,21 +46,18 @@ function ReusableForm(props) {
           
           type='text'
           name='words'
-          placeholder='Translate' />
+          placeholder='Word(s) to translate' />
           <input
-          onChange={handleChangeLang}/>
+          onChange={handleChangeLang}
           
-          <select value={handleChange}>
-          <option value="A">Apple</option>
-          <option value="B">Banana</option>
-          <option value="C">Cranberry</option>
-        </select> 
-
-          
+          type='text'
+          name='words'
+          placeholder='language code' />
 
           
         <button onClick={onSubmit} >TRANSLATE</button>
         <p>{translatedWord}</p>
+        <p>{translatedLang}</p>
 
 
    

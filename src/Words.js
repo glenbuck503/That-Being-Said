@@ -30,7 +30,7 @@ class Words extends React.Component {
        <ul>
 
           </ul>
-          <h3>{words}</h3>
+          <h3>{words.text}</h3>
          
         </React.Fragment>
       );
