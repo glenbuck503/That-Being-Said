@@ -29,6 +29,7 @@ function ReusableForm(props) {
       .catch((error) => {
       
       });
+      
   }
 
 
@@ -70,7 +71,9 @@ function ReusableForm(props) {
      
         <button onClick={onSubmit} >TRANSLATE</button>
       
-        <p>{translatedWord}</p>
+        <p className="result">{translatedWord}</p>
+
+        {/* <p className="trade">Glen Buck 2021 &#8482;</p> */}
    
 
 

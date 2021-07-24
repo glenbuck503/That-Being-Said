@@ -67,6 +67,7 @@ img {
    text-align: center;
    font-family: cursive;
    color: #F7882F;
+   
  }
 
   .first input {
@@ -122,3 +123,12 @@ img {
   
 }
 
+.trade {
+  font-size: 18px;
+  margin-right: 175px;
+}
+
+
+.result {
+  margin-right: 160px;
+}
