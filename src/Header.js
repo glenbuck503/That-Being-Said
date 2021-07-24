@@ -5,7 +5,8 @@ import ReusableForm from "./ReusableForm";
 function Header() {
   return (
     <React.Fragment>
-      <img src={wordsImage} id="languagesPic" />
+      <h2 className="said">That Being Said!</h2>
+      {/* <img src={wordsImage} id="languagesPic" /> */}
 
    
       

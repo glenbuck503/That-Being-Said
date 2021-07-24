@@ -38,7 +38,7 @@
 }
 
 body {
-  background-color:rgb(112, 238, 137);
+  background-color: #6B7A8F;
 }
 
 img {
@@ -56,6 +56,18 @@ img {
   padding-right: 200px;
   font-size: 24px;
   text-shadow: 1px 2px #ffc400;
- 
- 
+
+
  }
+
+ .said {
+   text-align: center;
+   font-family: cursive;
+   color: #F7882F;
+ }
+
+  #first .placeholder {
+   font-family:monospace;
+   text-transform: red;
+ }
+

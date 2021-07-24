@@ -21,6 +21,7 @@ function ReusableForm(props) {
       .then(
         (jsonifiedResponse) => {
           setTranslatedWord(jsonifiedResponse.text[0]);
+          setTranslatedLang(jsonifiedResponse.text);
 
 
 
@@ -40,13 +41,14 @@ function ReusableForm(props) {
 
   return (
     <React.Fragment>
-        
-        <input
+        <div className="first">
+        <input 
           onChange={handleChange}
           
           type='text'
           name='words'
           placeholder='Word(s) to translate' />
+          </div>
           <input
           onChange={handleChangeLang}
           
