@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 
+import Select from 'react-select';
+
+
+
 
 
 function ReusableForm(props) {
@@ -49,18 +53,11 @@ function ReusableForm(props) {
           type='text'
           name='words'
           placeholder='lang' />
-  
-        {/* <select>
-          <option value="es" onChange={handleChangeLang}>Russian</option>
 
-         <option value="en">English</option>
-          <option value="es">Spanish</option> 
-        </select>         */}
           
         <button onClick={onSubmit} >TRANSLATE</button>
         <p>{translatedWord}</p>
-        <p>{translatedLang}</p>
-        {/* <p>{translatedDrop}</p> */}
+
 
    
  
