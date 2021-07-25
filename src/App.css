@@ -123,12 +123,16 @@ img {
   
 }
 
-.trade {
+/* .trade {
   font-size: 18px;
   margin-right: 175px;
-}
+  color:blue;
+} */
 
 
 .result {
-  margin-right: 160px;
+  margin-right:140px;
+  text-align: center;
+  margin-left:300 px;
+  
 }

@@ -70,7 +70,13 @@ function ReusableForm(props) {
 
      
         <button onClick={onSubmit} >TRANSLATE</button>
-      
+        {/* <select id = "dropdown">
+    <option value="N/A">N/A</option>
+    <option value="es">Spanish</option>
+    <option value="ru">Russian</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+</select> */}
         <p className="result">{translatedWord}</p>
 
         {/* <p className="trade">Glen Buck 2021 &#8482;</p> */}
