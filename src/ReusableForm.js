@@ -36,11 +36,11 @@ function ReusableForm(props) {
 
   const onSubmit2 = () => {
 
-    fetch(`https://dictionary.yandex.net/api/v1/dicservice.json/lookup?key=${process.env.REACT_APP_API_KEY2}&lang=en-ru&text=time&callback=myCallback`)
+    fetch(`https://dictionary.yandex.net/api/v1/dicservice.json/lookup?key=${process.env.REACT_APP_API_KEY2}&lang=en-es&text=${setWord}`)
       .then(response => response.json())
       .then(
         (jsonifiedResponse) => {
-          setTranslatedWordDef( "definition: " + jsonifiedResponse.text); //maybe put [0] back if 
+          setTranslatedWordDef( "definition: " + jsonifiedResponse.def[0].text); //maybe put [0] back if 
 
 
 
@@ -92,13 +92,19 @@ function ReusableForm(props) {
             <option value="de">German</option>
             <option value="vi">Vietnamese</option>
           </select>
+
+   
         </div>
 
      
         <button onClick={onSubmit} >TRANSLATE</button>
    
         <p className="result">{translatedWord}</p>
+       
+     
+
         <button onClick={onSubmit2} >Def</button>
+        <p className="result2">{translatedWordDef}</p>
 
         {/* <p className="trade">Glen Buck 2021 &#8482;</p> */}
    
