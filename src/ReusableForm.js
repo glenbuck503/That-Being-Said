@@ -34,7 +34,7 @@ function ReusableForm(props) {
 
   const onSubmit2 = () => {
 
-    fetch(`https://dictionary.yandex.net/api/v1/dicservice.json/lookup?key=${process.env.REACT_APP_API_KEY2}&lang=en-ru&text=time`)
+    fetch(`https://dictionary.yandex.net/api/v1/dicservice.json/lookup?key=${process.env.REACT_APP_API_KEY2}&lang=en-ru&text=time&callback=myCallback`)
       .then(response => response.json())
       .then(
         (jsonifiedResponse) => {
@@ -78,18 +78,15 @@ function ReusableForm(props) {
             placeholder='Word(s) to translate' />
       
             
-            <select onChange={handleChangeLang}>
-            
-
-          <option value="list">Choose a Language</option>
-          <option id="option1" value="en">English</option>
-          <option value="es">Spanish</option>
-          <option value="ru">Russian</option>
-          <option value="fr">French</option>
-          <option value="de">German</option>
-          <option value="vi">Vietnamese</option>
-           </select>
-           
+          <select onChange={handleChangeLang}>
+            <option value="list">Choose a Language</option>
+            <option id="option1" value="en">English</option>
+            <option value="es">Spanish</option>
+            <option value="ru">Russian</option>
+            <option value="fr">French</option>
+            <option value="de">German</option>
+            <option value="vi">Vietnamese</option>
+          </select>
         </div>
 
      
