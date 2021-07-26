@@ -12,6 +12,8 @@ function ReusableForm(props) {
   const [ translatedWord, setTranslatedWord ] = useState("")
   const [ lang, setLang ] = useState("")
   const [ translatedLang, setTranslatedLang ] = useState("")
+  const [ wordDef, setWordDef ] = useState("")
+  const [ translatedWordDef, setTranslatedWordDef ] = useState("")
 
 
   const onSubmit = () => {
@@ -38,8 +40,7 @@ function ReusableForm(props) {
       .then(response => response.json())
       .then(
         (jsonifiedResponse) => {
-          setTranslatedWord( "definition: " + jsonifiedResponse.text); //maybe put [0] back if running into errors
-          setTranslatedLang(jsonifiedResponse.text);
+          setTranslatedWordDef( "definition: " + jsonifiedResponse.text); //maybe put [0] back if 
 
 
 
@@ -57,6 +58,10 @@ function ReusableForm(props) {
 
   const handleChangeLang = (event) => {
     setLang(event.target.value)
+  }
+
+  const handleChangeDef = (event) => {
+    setWordDef(event.target.value)
   }
 
 
@@ -93,6 +98,7 @@ function ReusableForm(props) {
         <button onClick={onSubmit} >TRANSLATE</button>
    
         <p className="result">{translatedWord}</p>
+        <button onClick={onSubmit2} >Def</button>
 
         {/* <p className="trade">Glen Buck 2021 &#8482;</p> */}
    
