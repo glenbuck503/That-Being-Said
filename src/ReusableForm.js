@@ -76,7 +76,7 @@ function ReusableForm(props) {
     <option value="ru">Russian</option>
     <option value="3">3</option>
     <option value="4">4</option>
-</select> */}
+</select>  */}
         <p className="result">{translatedWord}</p>
 
         {/* <p className="trade">Glen Buck 2021 &#8482;</p> */}
