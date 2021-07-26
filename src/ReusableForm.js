@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 
-import Select from 'react-select';
+
 
 
 
@@ -21,6 +21,24 @@ function ReusableForm(props) {
       .then(
         (jsonifiedResponse) => {
           setTranslatedWord( "Translation: " + jsonifiedResponse.text); //maybe put [0] back if running into errors
+          setTranslatedLang(jsonifiedResponse.text);
+
+
+
+        })
+      .catch((error) => {
+      
+      });
+      
+  }
+
+  const onSubmit2 = () => {
+
+    fetch(`https://dictionary.yandex.net/api/v1/dicservice.json/lookup?key=${process.env.REACT_APP_API_KEY2}&lang=en-ru&text=time`)
+      .then(response => response.json())
+      .then(
+        (jsonifiedResponse) => {
+          setTranslatedWord( "definition: " + jsonifiedResponse.text); //maybe put [0] back if running into errors
           setTranslatedLang(jsonifiedResponse.text);
 
 
