@@ -62,13 +62,9 @@ function ReusableForm(props) {
             
             <select onChange={handleChangeLang}>
             
-            
-            // type='select'
-            // name='words'
-            // placeholder='Language Code' 
 
           <option value="list">Choose a Language</option>
-          <option value="en">English</option>
+          <option id="option1" value="en">English</option>
           <option value="es">Spanish</option>
           <option value="ru">Russian</option>
           <option value="fr">French</option>
