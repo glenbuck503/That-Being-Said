@@ -67,9 +67,13 @@ function ReusableForm(props) {
             // name='words'
             // placeholder='Language Code' 
 
-          <option value="es">Spanish</option>
+          <option value="list">Choose a Language</option>
           <option value="en">English</option>
+          <option value="es">Spanish</option>
           <option value="ru">Russian</option>
+          <option value="fr">French</option>
+          <option value="de">German</option>
+          <option value="vi">Vietnamese</option>
            </select>
            
         </div>
