@@ -20,7 +20,7 @@ function ReusableForm(props) {
       .then(response => response.json())
       .then(
         (jsonifiedResponse) => {
-          setTranslatedWord( "Translation: " + jsonifiedResponse.text[0]);
+          setTranslatedWord( "Translation: " + jsonifiedResponse.text); //maybe put [0] back if running into errors
           setTranslatedLang(jsonifiedResponse.text);
 
 
@@ -60,23 +60,23 @@ function ReusableForm(props) {
             placeholder='Word(s) to translate' />
       
             
-            <input
-            onChange={handleChangeLang}
+            <select onChange={handleChangeLang}>
             
-            type='text'
-            name='words'
-            placeholder='language code' />
+            
+            // type='select'
+            // name='words'
+            // placeholder='Language Code' 
+
+          <option value="es">Spanish</option>
+          <option value="en">English</option>
+          <option value="ru">Russian</option>
+           </select>
+           
         </div>
 
      
         <button onClick={onSubmit} >TRANSLATE</button>
-        {/* <select id = "dropdown">
-    <option value="N/A">N/A</option>
-    <option value="es">Spanish</option>
-    <option value="ru">Russian</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-</select>  */}
+   
         <p className="result">{translatedWord}</p>
 
         {/* <p className="trade">Glen Buck 2021 &#8482;</p> */}
