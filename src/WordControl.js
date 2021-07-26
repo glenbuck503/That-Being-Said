@@ -38,19 +38,10 @@ class WordControl extends React.Component {
   }
 
 
-    handleAddingNewWordToList = (newWord) => {
-    this.setState({
-
-      selectedWord: null,
-      editing: false,
-      word: newWord
-
-    })
-    // const { dispatch } = this.props;
-    // const action = a.getWordsSuccess(newWord);
-    // dispatch(action);
-    // const action2 = a.toggleForm();
-    // dispatch(action2);
+  handleAddingNewWordToList = () => {
+    const { dispatch } = this.props;
+    const action = a.toggleForm();
+    dispatch(action);
   }
 
 
