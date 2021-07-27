@@ -67,8 +67,9 @@ img {
 
  .said {
    text-align: center;
-   font-family: cursive;
-   color: #F7882F;
+   font-family: Verdana;
+   /* color: #F7882F; */
+   color: rgba(247, 136, 47, .9);
    
  }
 
@@ -76,15 +77,15 @@ img {
 
 
  button {
-   font-family: fantasy;
+   font-family: Garamond;
    color:white;
    margin-left:124px;
-   background-color: #F7882F;
+   background-color: #f7882f;
  }
 
 
   ::placeholder {
-  font-family:cursive;
+  font-family:Garamond;
   color:#F7882F;
   font-size: 16px;
  
@@ -125,7 +126,7 @@ img {
 
 
 select {
-  font-family:cursive;
+  font-family:Garamond;
   color:#F7882F;
   font-size: 14.5px;
   margin-top: 100px;
@@ -135,7 +136,7 @@ select {
 
 
 .first input {
-  font-family:cursive ;
+  font-family:Garamond ;
   color:#F7882F;
   margin: 15px;
   /* font-size: 18px; */
