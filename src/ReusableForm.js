@@ -36,7 +36,7 @@ function ReusableForm(props) {
 
   const onSubmit2 = () => {
 
-    fetch(`https://dictionary.yandex.net/api/v1/dicservice.json/lookup?key=${process.env.REACT_APP_API_KEY2}&lang=en-es&text="hello"`)
+    fetch(`https://dictionary.yandex.net/api/v1/dicservice.json/lookup?key=${process.env.REACT_APP_API_KEY2}&lang=en-es&text="goodbye"`)
       .then(response => response.json())
       .then(
         (jsonifiedResponse) => {
