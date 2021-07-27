@@ -60,7 +60,7 @@ function ReusableForm(props) {
       <button onClick={onSubmit} >Login</button>
       <button onClick={onSubmit} >Contact</button>
       <button onClick={onSubmit} >Links</button>
-      <button onClick={onSubmit} >Dictionary</button>
+      <button onClick={onSubmit} >About</button>
       </div>
         <div className="first">
         
@@ -92,7 +92,7 @@ function ReusableForm(props) {
        
      
 
-        <button onClick={onSubmit2} >Def</button>
+        {/* <button onClick={onSubmit2} >Def</button> */}
         <p className="result2">{translatedWordDef}</p>
 
         {/* <p className="trade">Glen Buck 2021 &#8482;</p> */}
