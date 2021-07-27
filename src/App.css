@@ -6,6 +6,14 @@
   height: 40vmin;
   pointer-events: none;
 }
+@keyframes ticker {
+  10% {
+    transform: translate(100%, 0);
+  }
+  10% {
+    transform: translate(100%, 0);
+  }
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -70,6 +78,8 @@ img {
    font-family: Verdana;
    /* color: #F7882F; */
    color: rgba(247, 136, 47, .9);
+   animation: ticker 100s linear infinite;
+   
    
  }
 
@@ -105,6 +115,7 @@ img {
   padding-right:103px;
   width: 10%;
   text-shadow: 1px 1px #F7882F;
+  
   
 }
 

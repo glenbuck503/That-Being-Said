@@ -102,11 +102,11 @@ function ReusableForm(props) {
        
      
 
-        <button onClick={onSubmit2}> Def</button>
+        {/* <button onClick={onSubmit2}> Def</button> */}
         {/* <p className="result2">{lang}<audio  src={wordsAudio} controls autoPlay/></p> */}
-        <audio  src={wordsAudio} controls autoPlay/>
+        {/* <audio  src={wordsAudio} controls autoPlay/>
        
-        <audio  src={wordsAudio} controls/>
+        <audio  src={wordsAudio} controls/> */}
 
         {/* <p className="trade">Glen Buck 2021 &#8482;</p> */}
    
