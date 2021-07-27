@@ -12,12 +12,6 @@ class Words extends React.Component {
 
   }
 
-  // componentDidMount() {
-
-  //   const { dispatch } = this.props;
-  //   dispatch(makeApiCall());
-  // }
-
   render() {
     const { error, isLoading, words } = this.props;
     if (error) {
