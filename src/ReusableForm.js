@@ -16,6 +16,7 @@ function ReusableForm(props) {
   const [ translatedLang, setTranslatedLang ] = useState("")
   const [ wordDef, setWordDef ] = useState("")
   const [ translatedWordDef, setTranslatedWordDef ] = useState("")
+  const [ audio, setAudio ] = useState({wordsAudio})
 
 
   const onSubmit = () => {
@@ -26,6 +27,7 @@ function ReusableForm(props) {
         (jsonifiedResponse) => {
           setTranslatedWord( "Translation: " + jsonifiedResponse.text); //maybe put [0] back if running into errors
           setTranslatedLang(jsonifiedResponse.text);
+        
 
 
 
@@ -34,17 +36,21 @@ function ReusableForm(props) {
       
       });
       
+      
   }
 
   const onSubmit2 = () => {
+    setAudio({wordsAudio})
+  }
 
  
-      
-  }
+   
+  
 
 //work in progress. trying to figure out second api
   const handleChange = (event) => {
     setWord(event.target.value)
+    
   }
 
   const handleChangeLang = (event) => {
@@ -52,7 +58,7 @@ function ReusableForm(props) {
   }
 
   const handleChangeDef = (event) => {
-    setWordDef(event.target.value)
+    setAudio( <audio  src={wordsAudio} controls autoPlay/>);
   }
 
 
@@ -69,6 +75,7 @@ function ReusableForm(props) {
           <input 
             onChange={handleChange}
             
+            
             type='text'
             name='words'
             placeholder='Word(s) to translate' />
@@ -83,19 +90,22 @@ function ReusableForm(props) {
             <option value="de">German</option>
             <option value="vi">Vietnamese</option>
           </select>
-
+          
    
         </div>
 
      
         <button onClick={onSubmit} >TRANSLATE</button>
+
    
         <p className="result">{translatedWord}</p>
        
      
 
-        <button onClick={onSubmit2} >Def</button>
-        {/* <p className="result2">{wordsAudio}</p> */}
+        <button onClick={onSubmit2}> Def</button>
+        {/* <p className="result2">{lang}<audio  src={wordsAudio} controls autoPlay/></p> */}
+        <audio  src={wordsAudio} controls autoPlay/>
+       
         <audio  src={wordsAudio} controls/>
 
         {/* <p className="trade">Glen Buck 2021 &#8482;</p> */}
