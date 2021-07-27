@@ -2,25 +2,39 @@
   text-align: center;
 }
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
+} */
+
+.ticker-wrap {
+  width: 200%;
+  padding-left: 100%;
 }
 @keyframes ticker {
-  10% {
-    transform: translate(100%, 0);
-  }
-  10% {
-    transform: translate(100%, 0);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  /* 0% {
+    transform: translate(0, 0);
+  } */
+  100% {
+    transform: translate(0, 0);
   }
 }
+.ticker-item {
+  display: inline-block;
 
+}
+.ticker-move {
+  display: inline-block;
+  /* white-space: nowrap; */
+  padding-right: 100%;
+  animation: ticker 100s linear ;
+}
+.ticker-move-lower {
+  display: inline-block;
+  white-space: nowrap;
+  padding-right: 100%;
+  animation: ticker 100s linear;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -30,23 +44,21 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  animation: ticker 100s  linear;
 }
+.ticker-move:hover {
+  animation-play-state: paused;
+}
+
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
+html,
 body {
   background-color: #6B7A8F;
+  overflow-x: hidden;
   /* border: 3px solid #F7882F; */
 }
 
