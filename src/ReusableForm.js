@@ -18,7 +18,10 @@ function ReusableForm(props) {
   const [ translatedWordDef, setTranslatedWordDef ] = useState("")
   const [ audio, setAudio ] = useState({wordsAudio})
 
-
+  const onReload = e => {
+    e.preventDefault()
+    window.location.reload()
+  }
   const onSubmit = () => {
 
     fetch(`https://translate.yandex.net/api/v1.5/tr.json/translate?key=${process.env.REACT_APP_API_KEY}&text=${word}&lang=${lang}`)
@@ -65,7 +68,7 @@ function ReusableForm(props) {
   return (
     <React.Fragment>
       <div className="nav">
-      <button onClick={onSubmit} >Login</button>
+      <button onClick={onReload} >Home</button>
       <button onClick={onSubmit} >Contact</button>
       <button onClick={onSubmit} >Links</button>
       <button onClick={onSubmit} >About</button>
@@ -80,7 +83,6 @@ function ReusableForm(props) {
             name='words'
             placeholder='Word(s) to translate' />
       
-            {/* working on IBM text to speech */}
           <select onChange={handleChangeLang}>
             <option value="list">Choose a Language</option>
             <option id="option1" value="en">English</option>
@@ -103,7 +105,7 @@ function ReusableForm(props) {
      
 
         {/* <button onClick={onSubmit2}> Def</button> */}
-        {/* <p className="result2">{lang}<audio  src={wordsAudio} controls autoPlay/></p> */}
+        <p className="result2">{lang}<audio  src={wordsAudio} controls/></p>
         {/* <audio  src={wordsAudio} controls autoPlay/>
        
         <audio  src={wordsAudio} controls/> */}
@@ -111,8 +113,6 @@ function ReusableForm(props) {
         {/* <p className="trade">Glen Buck 2021 &#8482;</p> */}
    
 
-
-   
  
     </React.Fragment>
   );

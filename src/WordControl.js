@@ -7,6 +7,8 @@ import { connect } from 'react-redux';
 import PropTypes from "prop-types";
 import * as a from './actions';
 
+
+
 class WordControl extends React.Component {
 
   constructor(props) {
@@ -20,6 +22,9 @@ class WordControl extends React.Component {
     };
 
   }
+
+  
+
 
   handleClick = () => {
     if (this.state.selectedWord != null) {
