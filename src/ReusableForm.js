@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 
+import wordsAudio from "./img/hello_world.mp3";
+
 
 
 
@@ -92,8 +94,9 @@ function ReusableForm(props) {
        
      
 
-        {/* <button onClick={onSubmit2} >Def</button> */}
-        <p className="result2">{translatedWordDef}</p>
+        <button onClick={onSubmit2} >Def</button>
+        {/* <p className="result2">{wordsAudio}</p> */}
+        <audio  src={wordsAudio} controls/>
 
         {/* <p className="trade">Glen Buck 2021 &#8482;</p> */}
    
