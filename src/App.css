@@ -66,6 +66,10 @@ body {
 }
 .glenAboutMe {
   text-align:center;
+  margin-right:300px;
+    
+  font-size: 15px;
+
 }
 
 .inputForm {
