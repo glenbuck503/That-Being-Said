@@ -3,24 +3,28 @@ import PropTypes from "prop-types";
 import wordsAudio from "./img/hello_world.mp3";
 import glenImage from "./img/glen2.jpg";
 
-
-
-
-
-
-
 function ReusableForm(props) {
   const [ word, setWord ] = useState("")
   const [ translatedWord, setTranslatedWord ] = useState("")
   const [ lang, setLang ] = useState("")
   const [ translatedLang, setTranslatedLang ] = useState("")
-  const [ wordDef, setWordDef ] = useState("")
-  const [ translatedWordDef, setTranslatedWordDef ] = useState("")
-  const [ audio, setAudio ] = useState({wordsAudio})
+
+  const [showAbou, setShowAbout] = useState(false);
+
+
+  // const [ wordDef, setWordDef ] = useState("")
+  // const [ translatedWordDef, setTranslatedWordDef ] = useState("")
+  // const [ audio, setAudio ] = useState({wordsAudio})
 
   const onReload = e => {
     e.preventDefault()
     window.location.reload()
+  }
+
+  const onAboutMe = e => {
+    e.preventDefault()
+    window.location.reload()
+
   }
   const onSubmit = () => {
 
@@ -28,28 +32,16 @@ function ReusableForm(props) {
       .then(response => response.json())
       .then(
         (jsonifiedResponse) => {
-          setTranslatedWord( "Translation: " + jsonifiedResponse.text); //maybe put [0] back if running into errors
-          setTranslatedLang(jsonifiedResponse.text);
-        
-
-
-
+        setTranslatedWord( "Translation: " + jsonifiedResponse.text); //maybe put [0] back if running into errors
+        setTranslatedLang(jsonifiedResponse.text)
         })
       .catch((error) => {
-      
-      });
-      
-      
+    });  
   }
 
-  const onSubmit2 = () => {
-    setAudio({wordsAudio})
-  }
-
- 
-   
-  
-
+  // const onSubmit2 = () => {
+  //   setAudio({wordsAudio})
+  // }
 
   const handleChange = (event) => {
     setWord(event.target.value)
@@ -69,7 +61,7 @@ function ReusableForm(props) {
     <React.Fragment>
       <div className="nav">
       <button onClick={onReload} >Home</button>
-      <button onClick={onSubmit} >Contact</button>
+      <button onClick={onAboutMe} >Contact</button>
       <button onClick={onSubmit} >Links</button>
       <button onClick={onSubmit} >About</button>
       </div>
