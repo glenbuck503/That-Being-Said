@@ -19,19 +19,18 @@ function ReusableForm(props) {
     window.location.reload()
   }
 
-  const onAboutMe = e => {
-    e.preventDefault()
-    window.location.reload()
- 
+  // const onAboutMe = e => {
+  //   e.preventDefault()
+  //   window.location.reload()
 
-  }
+  // }
   const onSubmit = () => {
 
     fetch(`https://translate.yandex.net/api/v1.5/tr.json/translate?key=${process.env.REACT_APP_API_KEY}&text=${word}&lang=${lang}`)
       .then(response => response.json())
       .then(
         (jsonifiedResponse) => {
-        setTranslatedWord( "Translation: " + jsonifiedResponse.text); //maybe put [0] back if running into errors
+        setTranslatedWord( "Translation: " + jsonifiedResponse.text); 
         setTranslatedLang(jsonifiedResponse.text)
         })
       .catch((error) => {
@@ -47,29 +46,32 @@ function ReusableForm(props) {
     setLang(event.target.value)
   }
 
-  // const handleChangeDef = (event) => {
-  //   setAudio( <audio  src={wordsAudio} controls autoPlay/>);
+  
+  // const AboutMe = e => {
+  //   e.preventDefault()
+  //   window.location.reload()
   // }
-  const AboutMe = () => 
+
+  const AboutMe = () =>
   <div>
-    <p>You clicked the button!</p>
     <img className="glen" src={glenImage} id="portPic" />
+    <p>test test test test</p>
+    <p>test test test test</p>
 
   </div>;
+  
 
   return (
     <React.Fragment>
       <div className="first">
-      <div className="nav">
-      <button onClick={onReload} >Home</button>
-      <button onClick={onSubmit} >Contact</button>
-      <button onClick={onSubmit} >Links</button>
-      
-      <button onClick={onClick}>About</button>
-      {showAbout ? <AboutMe /> : null}
-      
-      </div>
+        <div className="nav">
+        <button onClick={onReload} >Home</button>
+        <button onClick={onSubmit} >Contact</button>
+        <button onClick={onSubmit} >Links</button>
         
+        <button onClick={onClick}>About</button>
+        {showAbout ? <AboutMe /> : null}
+      </div>
           <input 
             onChange={handleChange}
             type='text'
@@ -85,19 +87,14 @@ function ReusableForm(props) {
             <option value="de">German</option>
             <option value="vi">Vietnamese</option>
           </select>
-          
-
         </div>
         <button onClick={onSubmit} >TRANSLATE</button>
-      
-        
-        
-        
+
         <p className="result">{translatedWord}</p>
 
-      <div className="aboutMe">
+      {/* <div className="aboutMe">
         <img className="glen" src={glenImage} id="portPic" />
-      </div>
+      </div> */}
       
     </React.Fragment>
   );
@@ -122,12 +119,20 @@ export default ReusableForm;
 
 
  {/* <button onClick={onSubmit2}> Def</button> */}
+
+
         {/* <p className="result2">{lang}<audio  src={wordsAudio} controls/></p> */}
         {/* <audio  src={wordsAudio} controls autoPlay/>
        
         <audio  src={wordsAudio} controls/> */}
 
         {/* <p className="trade">Glen Buck 2021 &#8482;</p> */}
+
+
      // const onSubmit2 = () => {
   //   setAudio({wordsAudio})
+  // }
+
+  // const handleChangeDef = (event) => {
+  //   setAudio( <audio  src={wordsAudio} controls autoPlay/>);
   // }
