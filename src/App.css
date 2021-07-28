@@ -62,11 +62,12 @@ body {
   /* border: 3px solid #F7882F; */
 }
 
-img {
-  width: 400px;
-  height: 300px;
 
-
+ .aboutMe .glen {
+  width: 175px;
+  height: 175px;
+  margin-left:96px;
+  /* margin-right:500px; */
 }
 
 .inputForm {

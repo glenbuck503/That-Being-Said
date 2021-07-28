@@ -101,8 +101,8 @@ function ReusableForm(props) {
         <p className="result">{translatedWord}</p>
 
         <div className="aboutMe">
-          <img src={glenImage} id="portPic" />
-          <p>test text for about me div</p>
+          <img className="glen" src={glenImage} id="portPic" />
+   
 
 
           </div>
