@@ -12,8 +12,8 @@ function App() {
      
       <div className="inputForm">
       < ReusableForm/>
-      <WordControl />
-      <Words />
+      {/* <WordControl />
+      <Words /> */}
       </div>
 
     
