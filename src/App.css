@@ -73,7 +73,7 @@ body {
 .inputForm {
   margin-top: 50px;
   margin-left : 500px;
-  position :absolute;
+  position :fixed;
   color: white;
   padding-right: 300px;
   font-size: 24px;
@@ -97,8 +97,6 @@ body {
  }
 
 
-
-
  button {
    font-family: Garamond;
    color:white;
@@ -114,8 +112,6 @@ body {
  
 
 }
-
-
 
 .nav button {
   /* display:inline-block; */
