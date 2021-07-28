@@ -10,7 +10,7 @@ function ReusableForm(props) {
   const [ translatedLang, setTranslatedLang ] = useState("")
 
   const [showAbout, setShowAbout] = useState(false);
-  const onAboutMe = () => setShowAbout(true);
+  const onClick = () => setShowAbout(true);
 
 
 
@@ -22,12 +22,15 @@ function ReusableForm(props) {
   }
 
   const AboutMe = () =>
+  
     
   <div className="glenAboutMe">
+    
     <img className="glen" src={glenImage} id="portPic" />
+    
     <p className="pGlen">LinkedIn</p>
-    <p className="pGlen">GitHub</p>
-    <p className="pGlen">Email</p>
+
+    <p className="pGlen"> <a href= {"https://github.com/glenbuck503"}>GitHub</a></p>
    
 
   </div>;
@@ -66,7 +69,7 @@ function ReusableForm(props) {
       <div className="nav">
         <button onClick={onReload} >Home</button>
         <button onClick={onSubmit} >Links</button>
-        <button onClick={onAboutMe}>About</button>
+        <button onClick={onClick}>About</button>
         {showAbout ? <AboutMe /> : null }
         
       </div>
@@ -95,9 +98,7 @@ function ReusableForm(props) {
         <p className="result">{translatedWord}</p>
         </div>
 
-      {/* <div className="aboutMe">
-        <img className="glen" src={glenImage} id="portPic" />
-      </div> */}
+
       
     </React.Fragment>
   );
