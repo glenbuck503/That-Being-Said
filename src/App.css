@@ -58,6 +58,7 @@ body {
   background-color: #6B7A8F;
   width:100%;
 
+
   /* overflow-x: hidden; */
   /* border: 3px solid #F7882F; */
 }
@@ -73,28 +74,31 @@ body {
 .inputForm {
   margin-top: 50px;
   margin-left : 500px;
-  position :fixed;
+  /* width:50%;
+  height:100%; */
+  position :absolute;
   color: white;
   padding-right: 300px;
   font-size: 24px;
   text-shadow: 1px 1px #F7882F;
   margin-top: 80px;
 
-
  }
+
+
  p {
    text-align: center;
  }
 
- .said {
-   text-align: center;
-   font-family: Verdana;
-   /* color: #F7882F; */
-   color: rgba(247, 136, 47, .9);
-   animation: ticker 100s linear infinite;
-   
-   
- }
+.said {
+  text-align: center;
+  font-family: Verdana;
+  /* color: #F7882F; */
+  color: rgba(247, 136, 47, .9);
+  /* animation: ticker 100s linear infinite; */
+  
+  
+}
 
 
  button {
