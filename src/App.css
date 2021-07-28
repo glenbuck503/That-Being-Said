@@ -51,23 +51,21 @@ body {
 
 }
 
-.nav {
-  text-align: center; 
+.nav  {
+  text-align: right; 
   font-family: Verdana;
-  margin-right:170px; 
+  margin-right:-510px; 
 
  
   margin-left:-30px;
   margin-top:50px;
   margin-bottom: 100px;
-
- 
-  
-  
-  
- 
+   
   
 
+}
+.glenAboutMe {
+  text-align:center;
 }
 
 .inputForm {

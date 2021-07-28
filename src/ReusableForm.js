@@ -53,7 +53,7 @@ function ReusableForm(props) {
   // }
 
   const AboutMe = () =>
-  <div>
+  <div className="glenAboutMe">
     <img className="glen" src={glenImage} id="portPic" />
     <p className="pGlen">LinkedIn</p>
     <p className="pGlen">GitHub</p>
@@ -61,16 +61,17 @@ function ReusableForm(props) {
 
   </div>;
   
+  
 
   return (
     <React.Fragment>
-      <div className="first">
-        <div className="nav">
+      <div className="nav">
         <button onClick={onReload} >Home</button>
         <button onClick={onSubmit} >Links</button>
         <button onClick={onClick}>About</button>
         {showAbout ? <AboutMe /> : null}
       </div>
+      <div className="first">
       <div className="testInput">
           <input 
             onChange={handleChange}
