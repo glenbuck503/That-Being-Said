@@ -55,8 +55,8 @@ function ReusableForm(props) {
   const AboutMe = () =>
   <div>
     <img className="glen" src={glenImage} id="portPic" />
-    <p>test test test test</p>
-    <p>test test test test</p>
+    <p className="pGlen">LinkedIn</p>
+    <p className="pGlen">GitHub</p>
 
   </div>;
   

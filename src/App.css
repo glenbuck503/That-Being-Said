@@ -67,12 +67,19 @@ body {
   margin-top:-50px;
 }
 
- .aboutMe .glen {
-  width: 175px;
-  height: 175px;
-  margin-left:120px;
+  .glen  {
+  width: 200px;
+  height: 220px;
+  margin-left:-1250px;
+  margin-top:60px;
   
-  /* margin-right:200px; */
+  /* margin-right:500px; */
+}
+
+.pGlen {
+  margin-left:-1370px;
+  font-size: 15px;
+  color: black;
 }
 
 .nav {
