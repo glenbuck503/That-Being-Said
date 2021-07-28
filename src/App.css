@@ -3,7 +3,7 @@
  
 }
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -12,8 +12,8 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  animation: ticker 100s  linear;
-}
+
+} */
 
 
 .App-link {
@@ -58,7 +58,7 @@ body {
 
  
   margin-left:-30px;
-  margin-top:50px;
+  margin-top:-10px;
   margin-bottom: 100px;
    
   
@@ -92,10 +92,15 @@ body {
  }
 
 .said {
+  font-family: Garamond;
   text-align: center;
-  font-family: Verdana;
 
-  color: rgba(247, 136, 47, .9);
+
+  color: #F7882F;
+  font-size: 32px;
+  text-shadow: -1px 0px white;
+  margin-top: 120px;
+
 
 
   
@@ -160,6 +165,7 @@ select {
 .first {
   margin-left:34px;
   margin-top:60px;
+  margin-bottom:40px;
   
 }
 .first input {
@@ -169,6 +175,7 @@ select {
   /* font-size: 18px; */
   margin-left: 22px;
   width: 132px;
+  margin-top: 180px;
 
 }
  
