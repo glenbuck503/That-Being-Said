@@ -72,6 +72,7 @@ function ReusableForm(props) {
         <button onClick={onClick}>About</button>
         {showAbout ? <AboutMe /> : null}
       </div>
+      <div className="testInput">
           <input 
             onChange={handleChange}
             type='text'
@@ -87,6 +88,7 @@ function ReusableForm(props) {
             <option value="de">German</option>
             <option value="vi">Vietnamese</option>
           </select>
+          </div>
         </div>
         <button onClick={onSubmit} >TRANSLATE</button>
 
