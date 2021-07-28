@@ -9,8 +9,8 @@ function ReusableForm(props) {
   const [ lang, setLang ] = useState("")
   const [ translatedLang, setTranslatedLang ] = useState("")
 
-  // const [showAbou, setShowAbout] = useState(false);
-  // const onClick = () => setShowText(true);
+  const [showAbout, setShowAbout] = useState(false);
+  const onClick = () => setShowAbout(true);
 
 
 
@@ -22,6 +22,7 @@ function ReusableForm(props) {
   const onAboutMe = e => {
     e.preventDefault()
     window.location.reload()
+ 
 
   }
   const onSubmit = () => {
@@ -37,10 +38,6 @@ function ReusableForm(props) {
     });  
   }
 
-  // const onSubmit2 = () => {
-  //   setAudio({wordsAudio})
-  // }
-
   const handleChange = (event) => {
     setWord(event.target.value)
     
@@ -53,16 +50,24 @@ function ReusableForm(props) {
   // const handleChangeDef = (event) => {
   //   setAudio( <audio  src={wordsAudio} controls autoPlay/>);
   // }
+  const AboutMe = () => 
+  <div>
+    <p>You clicked the button!</p>
+    <img className="glen" src={glenImage} id="portPic" />
 
+  </div>;
 
   return (
     <React.Fragment>
       <div className="first">
       <div className="nav">
       <button onClick={onReload} >Home</button>
-      <button onClick={onAboutMe} >Contact</button>
+      <button onClick={onSubmit} >Contact</button>
       <button onClick={onSubmit} >Links</button>
-      <button onClick={onSubmit} >About</button>
+      
+      <button onClick={onClick}>About</button>
+      {showAbout ? <AboutMe /> : null}
+      
       </div>
         
           <input 
@@ -84,20 +89,27 @@ function ReusableForm(props) {
 
         </div>
         <button onClick={onSubmit} >TRANSLATE</button>
-       
+      
+        
+        
+        
         <p className="result">{translatedWord}</p>
 
       <div className="aboutMe">
         <img className="glen" src={glenImage} id="portPic" />
       </div>
+      
     </React.Fragment>
   );
+
 }
 
 ReusableForm.propTypes = {
   formSubmissionHandler: PropTypes.func,
   buttonText: PropTypes.string
 };
+
+
 export default ReusableForm;
 
 
@@ -116,4 +128,6 @@ export default ReusableForm;
         <audio  src={wordsAudio} controls/> */}
 
         {/* <p className="trade">Glen Buck 2021 &#8482;</p> */}
-   
+     // const onSubmit2 = () => {
+  //   setAudio({wordsAudio})
+  // }
