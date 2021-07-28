@@ -50,7 +50,7 @@ function ReusableForm(props) {
    
   
 
-//work in progress. trying to figure out second api
+
   const handleChange = (event) => {
     setWord(event.target.value)
     
@@ -96,22 +96,19 @@ function ReusableForm(props) {
    
         </div>
 
-     
+    
         <button onClick={onSubmit} >TRANSLATE</button>
-
-   
         <p className="result">{translatedWord}</p>
+
+        <div className="aboutMe">
+          <p>test text for about me div</p>
+          
+
+          </div>
        
      
 
-        {/* <button onClick={onSubmit2}> Def</button> */}
-        <p className="result2">{lang}<audio  src={wordsAudio} controls/></p>
-        {/* <audio  src={wordsAudio} controls autoPlay/>
        
-        <audio  src={wordsAudio} controls/> */}
-
-        {/* <p className="trade">Glen Buck 2021 &#8482;</p> */}
-   
 
  
     </React.Fragment>
@@ -126,4 +123,14 @@ ReusableForm.propTypes = {
 export default ReusableForm;
 
 
-//adding firebase to project
+
+
+
+ {/* <button onClick={onSubmit2}> Def</button> */}
+        {/* <p className="result2">{lang}<audio  src={wordsAudio} controls/></p> */}
+        {/* <audio  src={wordsAudio} controls autoPlay/>
+       
+        <audio  src={wordsAudio} controls/> */}
+
+        {/* <p className="trade">Glen Buck 2021 &#8482;</p> */}
+   
