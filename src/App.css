@@ -1,11 +1,9 @@
 .App {
   text-align: center;
+ 
 }
 
-/* .App-logo {
-  height: 40vmin;
-  pointer-events: none;
-} */
+
 
 .ticker-wrap {
   width: 200%;
@@ -55,10 +53,12 @@
   color: #61dafb;
 }
 
-html,
+
 body {
   background-color: #6B7A8F;
-  overflow-x: hidden;
+  width:100%;
+
+  /* overflow-x: hidden; */
   /* border: 3px solid #F7882F; */
 }
 
@@ -67,7 +67,7 @@ body {
   width: 175px;
   height: 175px;
   margin-left:96px;
-  /* margin-right:500px; */
+  margin-right:200px;
 }
 
 .inputForm {
