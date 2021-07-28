@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-
 import wordsAudio from "./img/hello_world.mp3";
+import glenImage from "./img/glen2.jpg";
 
 
 
@@ -101,8 +101,9 @@ function ReusableForm(props) {
         <p className="result">{translatedWord}</p>
 
         <div className="aboutMe">
+          <img src={glenImage} id="portPic" />
           <p>test text for about me div</p>
-          
+
 
           </div>
        
