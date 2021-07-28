@@ -9,12 +9,10 @@ function ReusableForm(props) {
   const [ lang, setLang ] = useState("")
   const [ translatedLang, setTranslatedLang ] = useState("")
 
-  const [showAbou, setShowAbout] = useState(false);
+  // const [showAbou, setShowAbout] = useState(false);
+  // const onClick = () => setShowText(true);
 
 
-  // const [ wordDef, setWordDef ] = useState("")
-  // const [ translatedWordDef, setTranslatedWordDef ] = useState("")
-  // const [ audio, setAudio ] = useState({wordsAudio})
 
   const onReload = e => {
     e.preventDefault()
@@ -52,25 +50,23 @@ function ReusableForm(props) {
     setLang(event.target.value)
   }
 
-  const handleChangeDef = (event) => {
-    setAudio( <audio  src={wordsAudio} controls autoPlay/>);
-  }
+  // const handleChangeDef = (event) => {
+  //   setAudio( <audio  src={wordsAudio} controls autoPlay/>);
+  // }
 
 
   return (
     <React.Fragment>
+      <div className="first">
       <div className="nav">
       <button onClick={onReload} >Home</button>
       <button onClick={onAboutMe} >Contact</button>
       <button onClick={onSubmit} >Links</button>
       <button onClick={onSubmit} >About</button>
       </div>
-        <div className="first">
         
           <input 
             onChange={handleChange}
-            
-            
             type='text'
             name='words'
             placeholder='Word(s) to translate' />
@@ -85,28 +81,17 @@ function ReusableForm(props) {
             <option value="vi">Vietnamese</option>
           </select>
           
-   
-        </div>
 
-    
+        </div>
         <button onClick={onSubmit} >TRANSLATE</button>
+       
         <p className="result">{translatedWord}</p>
 
-        <div className="aboutMe">
-          <img className="glen" src={glenImage} id="portPic" />
-   
-
-
-          </div>
-       
-     
-
-       
-
- 
+      <div className="aboutMe">
+        <img className="glen" src={glenImage} id="portPic" />
+      </div>
     </React.Fragment>
   );
- 
 }
 
 ReusableForm.propTypes = {
@@ -117,6 +102,11 @@ export default ReusableForm;
 
 
 
+
+
+  // const [ wordDef, setWordDef ] = useState("")
+  // const [ translatedWordDef, setTranslatedWordDef ] = useState("")
+  // const [ audio, setAudio ] = useState({wordsAudio})
 
 
  {/* <button onClick={onSubmit2}> Def</button> */}

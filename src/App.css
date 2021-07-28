@@ -66,8 +66,8 @@ body {
  .aboutMe .glen {
   width: 175px;
   height: 175px;
-  margin-left:96px;
-  margin-right:200px;
+  margin-left:120px;
+  /* margin-right:200px; */
 }
 
 .inputForm {
@@ -102,7 +102,7 @@ body {
  button {
    font-family: Garamond;
    color:white;
-   margin-left:124px;
+   margin-left:160px;
    background-color: #f7882f;
  }
 
@@ -150,6 +150,10 @@ select {
 
 }
 
+
+.first {
+  margin-left:34px;
+}
 .first input {
   font-family:Garamond ;
   color:#F7882F;
