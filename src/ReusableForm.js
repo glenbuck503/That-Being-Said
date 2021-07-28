@@ -57,6 +57,7 @@ function ReusableForm(props) {
     <img className="glen" src={glenImage} id="portPic" />
     <p className="pGlen">LinkedIn</p>
     <p className="pGlen">GitHub</p>
+    <p className="pGlen">Email</p>
 
   </div>;
   
@@ -66,9 +67,7 @@ function ReusableForm(props) {
       <div className="first">
         <div className="nav">
         <button onClick={onReload} >Home</button>
-        <button onClick={onSubmit} >Contact</button>
         <button onClick={onSubmit} >Links</button>
-        
         <button onClick={onClick}>About</button>
         {showAbout ? <AboutMe /> : null}
       </div>
