@@ -39,46 +39,32 @@ body {
   height: 30%;
   margin-left:-1250px;
   margin-top:25%;
-
-  
-  /* margin-right:500px; */
 }
 
 .pGlen  {
   margin-left:-1300px;
   font-size: 15px;
   color: black;
-
 }
 
 .nav  {
   text-align: right; 
   font-family: Verdana;
   margin-right:-510px; 
-
- 
   margin-left:-30px;
   margin-top:-10px;
   margin-bottom: 100px;
-
-   
-  
-
 }
 .glenAboutMe {
   text-align:center;
   margin-right:300px;
-    
   font-size: 15px;
-  
 
 }
 
 .inputForm {
   margin-top: 50px;
   margin-left : 498px;
-  /* width:50%;
-  height:100%; */
   position :absolute;
   color: white;
   padding-right: 300px;
