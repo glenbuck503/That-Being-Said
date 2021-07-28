@@ -10,20 +10,29 @@ function ReusableForm(props) {
   const [ translatedLang, setTranslatedLang ] = useState("")
 
   const [showAbout, setShowAbout] = useState(false);
-  const onClick = () => setShowAbout(true);
+  const onAboutMe = () => setShowAbout(true);
+
 
 
 
   const onReload = e => {
     e.preventDefault()
     window.location.reload()
+    
   }
 
-  // const onAboutMe = e => {
-  //   e.preventDefault()
-  //   window.location.reload()
+  const AboutMe = () =>
+    
+  <div className="glenAboutMe">
+    <img className="glen" src={glenImage} id="portPic" />
+    <p className="pGlen">LinkedIn</p>
+    <p className="pGlen">GitHub</p>
+    <p className="pGlen">Email</p>
+   
 
-  // }
+  </div>;
+
+
   const onSubmit = () => {
 
     fetch(`https://translate.yandex.net/api/v1.5/tr.json/translate?key=${process.env.REACT_APP_API_KEY}&text=${word}&lang=${lang}`)
@@ -47,19 +56,8 @@ function ReusableForm(props) {
   }
 
   
-  // const AboutMe = e => {
-  //   e.preventDefault()
-  //   window.location.reload()
-  // }
 
-  const AboutMe = () =>
-  <div className="glenAboutMe">
-    <img className="glen" src={glenImage} id="portPic" />
-    <p className="pGlen">LinkedIn</p>
-    <p className="pGlen">GitHub</p>
-    <p className="pGlen">Email</p>
 
-  </div>;
   
   
 
@@ -68,8 +66,9 @@ function ReusableForm(props) {
       <div className="nav">
         <button onClick={onReload} >Home</button>
         <button onClick={onSubmit} >Links</button>
-        <button onClick={onClick}>About</button>
-        {showAbout ? <AboutMe /> : null}
+        <button onClick={onAboutMe}>About</button>
+        {showAbout ? <AboutMe /> : null }
+        
       </div>
       <div className="first">
       <div className="testInput">
@@ -90,9 +89,11 @@ function ReusableForm(props) {
           </select>
           </div>
         </div>
+        <div className="fullResult">
         <button onClick={onSubmit} >TRANSLATE</button>
 
         <p className="result">{translatedWord}</p>
+        </div>
 
       {/* <div className="aboutMe">
         <img className="glen" src={glenImage} id="portPic" />
