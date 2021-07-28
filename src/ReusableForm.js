@@ -28,9 +28,9 @@ function ReusableForm(props) {
     
     <img className="glen" src={glenImage} id="portPic" />
     
-    <p className="pGlen">LinkedIn</p>
-
+    <p className="pGlen"> <a href= {"https://www.linkedin.com/in/glen-buck/"}>LinkedIn</a></p>
     <p className="pGlen"> <a href= {"https://github.com/glenbuck503"}>GitHub</a></p>
+    <p className="pGlen"> <a href = "mailto: glenbuck@gamil.com">Email</a></p>
    
 
   </div>;
