@@ -74,11 +74,16 @@ function ReusableForm(props) {
             placeholder='Word(s) to translate' />
           <select onChange={handleChangeLang}>
             <option value="list">Choose a Language</option>
-            <option id="option1" value="en">English</option>
-            <option value="es">Spanish</option>
-            <option value="ru">Russian</option>
+            <option value="en">English</option>
+            <option value="zh">Chinese</option>
             <option value="fr">French</option>
             <option value="de">German</option>
+            <option value="hi">Hindi</option>
+            <option value="id">Indonesian</option>
+            <option value="ko">Korean</option>
+            <option value="pt">Portuguese</option>
+            <option value="ru">Russian</option>
+            <option value="es">Spanish</option>
             <option value="vi">Vietnamese</option>
           </select>
           </div>
@@ -91,6 +96,16 @@ function ReusableForm(props) {
   );
 }
 export default ReusableForm;
+
+
+
+
+
+
+
+
+
+
 
 
 
