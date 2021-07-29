@@ -113,6 +113,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 * UUID
 * React
 * React Redux
+* Yandex Translate API
+* React Hooks
 
 
 ## Support and contact details
