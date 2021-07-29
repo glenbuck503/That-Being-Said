@@ -42,11 +42,8 @@ function ReusableForm(props) {
     <li className="pGlen"> <a href = "mailto: glenbuck@gamil.com">Email</a></li>
 </ul>
 
-
   </div>;
   
-
-
   const onSubmit = () => {
 
     fetch(`https://translate.yandex.net/api/v1.5/tr.json/translate?key=${process.env.REACT_APP_API_KEY}&text=${word}&lang=${lang}`)
@@ -69,12 +66,6 @@ function ReusableForm(props) {
     setLang(event.target.value)
   }
 
-  
-
-
-  
-  
-
   return (
     <React.Fragment>
       <div className="nav">
@@ -82,38 +73,31 @@ function ReusableForm(props) {
         <button onClick={onSubmit} >Links</button>
         <button onClick={onClick}>About</button>
         {showAbout ? <AboutMe /> : null }
-        
       </div>
       <div className="first">
       <div className="testInput">
-          <input 
-            onChange={handleChange}
-            type='text'
-            name='words'
-            placeholder='Word(s) to translate' />
-      
-          <select onChange={handleChangeLang}>
-            <option value="list">Choose a Language</option>
-            <option id="option1" value="en">English</option>
-            <option value="es">Spanish</option>
-            <option value="ru">Russian</option>
-            <option value="fr">French</option>
-            <option value="de">German</option>
-            <option value="vi">Vietnamese</option>
-          </select>
-          </div>
+        <input 
+          onChange={handleChange}
+          type='text'
+          name='words'
+          placeholder='Word(s) to translate' />
+        <select onChange={handleChangeLang}>
+          <option value="list">Choose a Language</option>
+          <option id="option1" value="en">English</option>
+          <option value="es">Spanish</option>
+          <option value="ru">Russian</option>
+          <option value="fr">French</option>
+          <option value="de">German</option>
+          <option value="vi">Vietnamese</option>
+        </select>
+        </div>
         </div>
         <div className="fullResult">
         <button onClick={onSubmit} >TRANSLATE</button>
-
         <p className="result">{translatedWord}</p>
         </div>
-
-
-      
     </React.Fragment>
   );
-
 }
 
 ReusableForm.propTypes = {
