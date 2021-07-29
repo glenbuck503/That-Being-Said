@@ -76,9 +76,14 @@ body {
 
 
  p {
-   text-align: center;
+   text-align: left;
  }
 
+ .glenAboutMe p {
+   color:black;
+   margin-bottom: 10px;
+
+ }
 .said {
   font-family: Garamond;
   text-align: center;
