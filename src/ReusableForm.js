@@ -25,9 +25,17 @@ function ReusableForm(props) {
   
     
   <div className="glenAboutMe">
-    <p className="aboutP">I was born and raised in Portland, OR. I have spent the last 12 years in Client Relations and Office Managememt for a Tax Sertvices Inc, which is a local Tax Firm here in the Portland area.</p>
+    <p className="aboutP">I was born and raised in Portland, OR. I have spent the last 12 years in Client Relations and Office Managememt for a Tax Sertvices Inc, which is a local Tax Firm here in the Portland area. I decided to make a career switch about a year ago as I have been wanting to get into the development field for quite some time. I am excited to see where it takes me.
 
-    
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    ABOUT THIS APP:
+    <br/>
+    <br/>
+    A while back, a friend of mine pointed out that I say "With that being said" a lot. I was very confused and told him "no I dont!". Sure enough the very next day I caught myself saying it all the time. So I decided to make a translator app and call it "That Being Said". This is still a work in progress as I will be adding a definition function and a text to speech function later. </p>
     <ul>
     <img className="glen" src={glenImage} id="portPic" />
     <li className="pGlen"> <a href= {"https://www.linkedin.com/in/glen-buck/"}>LinkedIn</a></li>
