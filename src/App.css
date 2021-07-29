@@ -82,7 +82,8 @@ body {
  .glenAboutMe p {
    color:black;
    margin-bottom: 10px;
-
+   position:absolute;
+   
  }
 .said {
   font-family: Garamond;
