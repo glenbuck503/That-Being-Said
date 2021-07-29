@@ -25,6 +25,7 @@ function ReusableForm(props) {
   
     
   <div className="glenAboutMe">
+    <p className="aboutP">I was born and raised in Portland, OR. I have spent the last 12 years in Client Relations and Office Managememt for a Tax Sertvices Inc, which is a local Tax Firm here in the Portland area.</p>
 
     
     <ul>
@@ -33,7 +34,7 @@ function ReusableForm(props) {
     <li className="pGlen"> <a href= {"https://github.com/glenbuck503"}>GitHub</a></li>
     <li className="pGlen"> <a href = "mailto: glenbuck@gamil.com">Email</a></li>
 </ul>
-<p>I was born and raised in Portland, OR. I have spent the last 12 years in Client Relations and Office Managememt for a Tax Sertvices Inc, which is a local Tax Firm here in the Portland area.</p>
+
 
   </div>;
   
