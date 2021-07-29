@@ -26,15 +26,14 @@ function ReusableForm(props) {
     
   <div className="glenAboutMe">
     <ul>
-    
     <img className="glen" src={glenImage} id="portPic" />
-    
     <li className="pGlen"> <a href= {"https://www.linkedin.com/in/glen-buck/"}>LinkedIn</a></li>
     <li className="pGlen"> <a href= {"https://github.com/glenbuck503"}>GitHub</a></li>
     <li className="pGlen"> <a href = "mailto: glenbuck@gamil.com">Email</a></li>
-   
 </ul>
+  <p>dsfsdfds</p>
   </div>;
+  
 
 
   const onSubmit = () => {
