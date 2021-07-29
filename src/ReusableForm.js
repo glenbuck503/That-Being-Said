@@ -23,7 +23,6 @@ function ReusableForm(props) {
 
   const AboutMe = () =>
   
-    //work in progress
   <div className="glenAboutMe">
     <p className="aboutP">I was born and raised in Portland, OR. I have spent the last 12 years in Client Relations and Office Managememt for a Tax Sertvices Inc, which is a local Tax Firm here in the Portland area. I decided to make a career switch about a year ago as I have been wanting to get into the development field for quite some time. I am excited to see where it takes me.
 
