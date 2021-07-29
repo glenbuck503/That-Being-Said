@@ -1,9 +1,7 @@
-import React, { useState } from "react";
-import PropTypes from "prop-types";
-import wordsAudio from "./img/hello_world.mp3";
+import React, { useState } from "react"
 import glenImage from "./img/glen2.jpg";
 
-function ReusableForm(props) {
+function Main(props) {
   const [ word, setWord ] = useState("")
   const [ translatedWord, setTranslatedWord ] = useState("")
   const [ lang, setLang ] = useState("")
@@ -95,7 +93,7 @@ function ReusableForm(props) {
     </React.Fragment>
   );
 }
-export default ReusableForm;
+export default Main;
 
 
 

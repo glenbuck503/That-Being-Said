@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import ReusableForm from './ReusableForm';
+import Main from './Main';
 import Header from './Header'
 
 
@@ -9,7 +9,7 @@ function App() {
     <React.Fragment>
       < Header />
       <div className="inputForm">
-      < ReusableForm/>
+      < Main/>
 
       </div>
     </React.Fragment>

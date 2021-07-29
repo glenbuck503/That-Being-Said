@@ -1,5 +1,5 @@
 import React from "react";
-import ReusableForm from "./ReusableForm";
+import Main from "./Main";
 
 
 function Header() {
